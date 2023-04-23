@@ -1,8 +1,7 @@
 import { Stack } from "@mui/material";
 import { PieChart } from "./PieChart";
 import { BarChart } from "./BarChart";
-import { useSelector } from "react-redux";
-import { RootState } from "../redux/store";
+
 
 export const Charts = () => {
   return (
