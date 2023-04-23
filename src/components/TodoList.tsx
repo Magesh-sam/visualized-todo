@@ -60,7 +60,7 @@ export const TodoList:FC<ITodoList> = ({query}) => {
               </Stack>
           </ListItem>
         ))}
-      </List>:<Typography marginY={5} color='red' variant="h3" >No Todos Available!</Typography>}
+      </List>:<Typography marginY={5} color='red' variant="h3" align='center' >No Todos Available!</Typography>}
       <Snackbar open={open} autoHideDuration={1000} onClose={()=>setOpen(false)}  anchorOrigin={{vertical:'top',horizontal:'center'}}>
         <Alert variant="filled" severity="info" >Task Deleted Successfully! <IconButton sx={{color:'white'}} onClick={()=>setOpen(false)} ><CloseIcon/></IconButton> </Alert>
       </Snackbar>
