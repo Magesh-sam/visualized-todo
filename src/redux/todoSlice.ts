@@ -10,49 +10,49 @@ export interface TaskProps{
 
 const sampleData = [
     {
-        id: 'dkfkj39843jenf',
+        id: 'dkfkj3erelfkmelk9843jenf',
         taskName: 'walk  the dog',
         completed: false,
         category: 'home'
     },
     {
-        id: 'dkf122345jenf',
+        id: 'dkf12234rfelkmfl435jenf',
         taskName: 'buy chicken',
         completed: false,
         category: 'home'
     },
     {
-        id: 'dkfkj39834284nf',
+        id: 'dkfkj39834283l4k3ml4nf',
         taskName: 'wash dishes',
         completed: true,
         category: 'home'
     },
     {
-        id: 'dkfkjeuhrueh39843jenf',
+        id: 'dkfkjeuhrerlerueh39843jenf',
         taskName: 'Maths Homework',
         completed: false,
         category: 'school'
     },
     {
-        id: 'dkfkj3984eijfie3jenf',
+        id: 'dkfkerplelrj3984eijfie3jenf',
         taskName: 'Submit weekly report',
         completed: false,
         category: 'work'
     },
     {
-        id: 'rirtrt4985uhgj',
+        id: 'rirtrt49erpleprl85uhgj',
         taskName: 'Meet john',
         completed: true,
         category: 'personal'
     },
     {
-        id: 'rirtrt49lfkmefe85uhgj',
+        id: 'rirtrt49lfkmefererokeore85uhgj',
         taskName: 'buy shoes',
         completed: false,
         category: 'personal'
     },
     {
-        id: 'rirtrt49lfkmefe85uhgj',
+        id: 'rirtreeprlperlpe85uhgj',
         taskName: 'Meet lucy',
         completed: true,
         category: 'personal'
