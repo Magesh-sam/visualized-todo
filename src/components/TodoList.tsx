@@ -31,7 +31,7 @@ export const TodoList:FC<ITodoList> = ({query}) => {
 
   return (
     <Container sx={{display:'grid',placeContent:'center',marginBottom:'50px'}} >
-      <List sx={{width:'90vw',maxHeight:'900px',overflow:'auto',padding:'40px 40px', boxShadow: 'rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px'}} >
+      {filteredTodos.length>0?<List sx={{width:'90vw',maxHeight:'900px',overflow:'auto',padding:'40px 40px', boxShadow: 'rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px'}} >
         {filteredTodos.map((todo) => (
           <ListItem
             key={todo.id}
@@ -60,7 +60,7 @@ export const TodoList:FC<ITodoList> = ({query}) => {
               </Stack>
           </ListItem>
         ))}
-      </List>
+      </List>:<Typography marginY={5} color='red' variant="h3" >No Todos Available!</Typography>}
       <Snackbar open={open} autoHideDuration={1000} onClose={()=>setOpen(false)}  anchorOrigin={{vertical:'top',horizontal:'center'}}>
         <Alert variant="filled" severity="info" >Task Deleted Successfully! <IconButton sx={{color:'white'}} onClick={()=>setOpen(false)} ><CloseIcon/></IconButton> </Alert>
       </Snackbar>
