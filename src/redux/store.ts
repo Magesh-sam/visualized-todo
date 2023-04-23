@@ -3,14 +3,12 @@ import todoReducer from "./todoSlice";
 import { persistStore, persistReducer } from "redux-persist";
 import storage from "redux-persist/lib/storage";
 
-
 const persistConfig = {
   key: "root",
   storage,
 };
-
 const ignoreRegisterMiddleware =
-  (store: any) => (next: any) => (action: any) => {
+  () => (next: any) => (action: any) => {
     if (action.type !== "REGISTER") {
       return next(action);
     }

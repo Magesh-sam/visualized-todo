@@ -1,4 +1,4 @@
-import { useSelector, useDispatch } from "react-redux";
+import { useSelector } from "react-redux";
 import { Chart } from "react-google-charts";
 import { RootState } from "../redux/store";
 
